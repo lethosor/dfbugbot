@@ -1,0 +1,3 @@
+[submodule "DFBugMonitor"]
+	path = DFBugMonitor
+	url = ../../lethosor/DFBugMonitor
