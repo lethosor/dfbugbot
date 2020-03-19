@@ -22,3 +22,6 @@ services:
       - type: bind
         source: ./bot/logs
         target: /app/logs
+      - type: bind
+        source: ./DFBugMonitor
+        target: /app/plugins/DFBugMonitor
