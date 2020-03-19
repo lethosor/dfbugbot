@@ -12,4 +12,4 @@ RUN pip install -r requirements.txt
 COPY template.conf dfbugbot.conf
 COPY DFBugMonitor /app/plugins/DFBugMonitor
 
-ENTRYPOINT ["supybot", "--allow-root", "dfbugbot.conf"]
+ENTRYPOINT ["supybot", "--allow-root", "bot.conf"]

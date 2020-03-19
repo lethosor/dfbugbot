@@ -5,15 +5,18 @@ services:
       context: .
     restart: always
     volumes:
-      -  type: bind
-         source: ./bot/backup
-         target: /app/backup
-      -  type: bind
-         source: ./bot/conf
-         target: /app/conf
-      -  type: bind
-         source: ./bot/data
-         target: /app/data
-      -  type: bind
-         source: ./bot/logs
-         target: /app/logs
+      - type: bind
+        source: ./bot/bot.conf
+        target: /app/bot.conf
+      - type: bind
+        source: ./bot/backup
+        target: /app/backup
+      - type: bind
+        source: ./bot/conf
+        target: /app/conf
+      - type: bind
+        source: ./bot/data
+        target: /app/data
+      - type: bind
+        source: ./bot/logs
+        target: /app/logs
