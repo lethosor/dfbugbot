@@ -3,6 +3,8 @@ services:
   bot:
     build:
       context: .
+    ports:
+      - "9002:9002"
     restart: always
     volumes:
       - type: bind
